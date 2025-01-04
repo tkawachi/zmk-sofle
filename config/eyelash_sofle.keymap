@@ -53,9 +53,7 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LSHFT>
                 , <&macro_press &kp LEFT_GUI>
-                , <&macro_press &kp N4>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp N4>
+                , <&macro_tap &kp N4 &kp SPACE>
                 , <&macro_release &kp LEFT_GUI>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp LCTRL>
@@ -157,7 +155,7 @@
 &kp F1     &kp F2        &kp F3          &kp F4        &kp F5        &kp F6          &mmv MOVE_LEFT   &trans  &kp N4 &kp N5 &kp N6  &kp LBRC        &kp RBRC
 &kp F7     &kp F8        &kp F9          &kp F10       &kp F11       &kp F12         &mmv MOVE_RIGHT  &trans  &kp N1 &kp N2 &kp N3  &kp LEFT_ARROW  &kp RIGHT_ARROW
 &trans     &trans        &trans          &trans        &trans        &kp LS(LG(N4))          &mkp LCLK        &trans  &trans  &trans &kp PG_DN      &kp PG_UP
-            >;
+            >; 
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
