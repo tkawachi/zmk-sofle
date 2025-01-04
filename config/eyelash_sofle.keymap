@@ -29,20 +29,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LANG2>
-                , <&macro_release &kp LANG2>
-                , <&macro_press &kp INT_MUHENKAN>
-                , <&macro_release &kp INT_MUHENKAN>
+                = <&kp LANG2 &kp INT_MUHENKAN>
                 ;
         };
         henkan: henkan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LANG1>
-                , <&macro_release &kp LANG1>
-                , <&macro_press &kp INT_HENKAN>
-                , <&macro_release &kp INT_HENKAN>
+                = <&kp LANG1 &kp INT_HENKAN>
                 ;
         };
         // window screenshot for macOS
@@ -51,8 +45,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL &kp LSHFT &kp LEFT_GUI>
-                , <&macro_tap &kp N4 &kp SPACE>
-                , <&macro_release &kp LEFT_GUI &kp LSHFT &kp LCTRL>
+                , <&kp N4 &kp SPACE>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LCTRL &kp LSHFT &kp LEFT_GUI>
                 ;
         };
     };
