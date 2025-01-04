@@ -140,7 +140,7 @@
 &kp GRAVE  &kp LG(LBKT)  &kp LG(RBKT)    &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp KP_N0    &kp PLUS
 &kp F1     &kp F2        &kp F3          &kp F4        &kp F5        &kp F6          &mmv MOVE_LEFT   &trans  &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp LBRC     &kp RBRC
 &kp F7     &kp F8        &kp F9          &kp F10       &kp F11       &kp F12         &mmv MOVE_RIGHT  &trans  &kp KP_N1 &kp KP_N2 &kp KP_N3  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &kp C_PLAY_PAUSE     &kp C_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
