@@ -79,13 +79,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LBRT>, <&kp LBRC>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
         };
         rbr: right_brace {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp RBRT>, <&kp RBRC>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
         };
     };
 
