@@ -50,13 +50,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_press &kp LSHFT>
-                , <&macro_press &kp LEFT_GUI>
+                = <&macro_press &kp LCTRL &kp LSHFT &kp LEFT_GUI>
                 , <&macro_tap &kp N4 &kp SPACE>
-                , <&macro_release &kp LEFT_GUI>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LEFT_GUI &kp LSHFT &kp LCTRL>
                 ;
         };
     };
