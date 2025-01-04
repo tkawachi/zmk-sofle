@@ -52,14 +52,14 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - .
-  - $$mdi:volume-off$$
+  - $$mdi:mouse-right-click-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - layer1
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
+  - '&muhenkan'
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '&henkan'
   - $$mdi:keyboard-space$$
   - '2'
   - $$mdi:apple-keyboard-shift$$
