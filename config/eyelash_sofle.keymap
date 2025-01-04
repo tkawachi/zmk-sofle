@@ -45,6 +45,22 @@
                 , <&macro_release &kp INT_HENKAN>
                 ;
         };
+        // window screenshot for macOS
+        w_scrshot: window_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp LEFT_GUI>
+                , <&macro_press &kp N4>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp N4>
+                , <&macro_release &kp LEFT_GUI>
+                , <&macro_release &kp LSHFT>
+                , <&amcro_release &kp LCTRL>
+                ;
+        };
     };
 
     behaviors {
@@ -114,7 +130,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &kp LCTRL   &kp A      &kp S         &kp D         &kp F   &kp G        &mmv MOVE_LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp ENTER
 &mt LSHFT ESC &kp Z    &kp X         &kp C         &kp V   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &mt RSHFT APOS
-&mkp RCLK   &kp LEFT_ALT &kp LEFT_GUI &mo_1 1 0    &kp SPACE &kp LC(LS(LG(N4)))  &mkp LCLK        &kp LS(LG(N4))    &kp SPACE  &mo_2 2 0  &kp RCMD         &kp RALT
+&mkp RCLK   &kp LEFT_ALT &kp LEFT_GUI &mo_1 1 0    &kp SPACE &kp LC(LS(LG(N4)))  &mkp LCLK        &kp BACKSPACE &kp SPACE &mo_2 2 0        &mt RCMD DOWN_ARROW &mt RALT UP_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -127,7 +143,7 @@
 &kp TILDE   &kp EXCL         &kp AT          &kp HASH         &kp DLLR         &kp PRCNT          &mmv MOVE_DOWN   &kp CARET        &kp AMPS         &kp STAR    &kp LPAR   &kp RPAR          &kp EQUAL
 &trans      &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &mkp MB5           &mmv MOVE_LEFT   &kp EQUAL        &kp MINUS        &kp PLUS    &lbr       &rbr              &trans
 &trans      &kp HOME         &kp PG_DN       &kp PG_UP        &kp END          &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp UNDER        &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &w_scrshot         &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
@@ -137,10 +153,10 @@
         layer_2 {
             bindings = <
 &trans     &kp C_BRI_DN  &kp C_BRI_UP    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_SEARCH &trans &mmv MOVE_UP &trans  &trans  &trans &trans &trans       &trans
-&kp GRAVE  &kp LG(LBKT)  &kp LG(RBKT)    &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp KP_N0    &kp PLUS
-&kp F1     &kp F2        &kp F3          &kp F4        &kp F5        &kp F6          &mmv MOVE_LEFT   &trans  &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp LBRC     &kp RBRC
-&kp F7     &kp F8        &kp F9          &kp F10       &kp F11       &kp F12         &mmv MOVE_RIGHT  &trans  &kp KP_N1 &kp KP_N2 &kp KP_N3  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &kp C_PLAY_PAUSE     &kp C_MUTE
+&kp GRAVE  &kp LG(LBKT)  &kp LG(RBKT)    &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &kp N7 &kp N8 &kp N9  &kp N0    &kp PLUS
+&kp F1     &kp F2        &kp F3          &kp F4        &kp F5        &kp F6          &mmv MOVE_LEFT   &trans  &kp N4 &kp N5 &kp N6  &kp LBRC     &kp RBRC
+&kp F7     &kp F8        &kp F9          &kp F10       &kp F11       &kp F12         &mmv MOVE_RIGHT  &trans  &kp N1 &kp N2 &kp N3  &bootloader  &trans
+&trans     &trans        &trans          &trans        &trans        &kp LS(LG(N4))          &mkp LCLK        &trans  &trans  &trans      &kp C_PLAY_PAUSE     &kp C_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -149,9 +165,9 @@
         layer_3 {
             bindings = <
 &trans     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &kp KP_N7 &kp KP_N8 &kp KP_N9  &kp KP_N0    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp KP_N4 &kp KP_N5 &kp KP_N6  &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &kp KP_N1 &kp KP_N2 &kp KP_N3  &bootloader  &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &kp N7  &kp N8      &kp N9     &kp N0       &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &kp N4  &kp N5      &kp N6     &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &kp N1  &kp N2      &kp N3     &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
