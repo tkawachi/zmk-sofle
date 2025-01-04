@@ -55,7 +55,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - layer1
+  - '&mo_1'
   - $$mdi:keyboard-space$$
   - '&muhenkan'
   - $$mdi:mouse-left-click-outline$$
@@ -120,7 +120,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
