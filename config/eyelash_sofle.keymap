@@ -58,7 +58,7 @@
                 , <&macro_release &kp N4>
                 , <&macro_release &kp LEFT_GUI>
                 , <&macro_release &kp LSHFT>
-                , <&amcro_release &kp LCTRL>
+                , <&macro_release &kp LCTRL>
                 ;
         };
     };
