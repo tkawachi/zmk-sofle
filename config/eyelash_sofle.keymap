@@ -65,14 +65,14 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&muhenkan>;
+            bindings = <&mo>, <&muhenkan>;
         };
         mo_2: mo_2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo 2>, <&henkan>;
+            bindings = <&mo>, <&henkan>;
         };
     };
 
@@ -93,7 +93,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &mmv MOVE_DOWN   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
 &kp LCTRL   &kp A      &kp S         &kp D         &kp F   &kp G        &mmv MOVE_LEFT   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp ENTER
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp APOS
-&mkp RCLK   &kp LEFT_ALT &kp LEFT_GUI &mo_1 0 0    &kp SPACE &muhenkan  &mkp LCLK        &henkan    &kp SPACE   &mo_2 0 0 &kp RIGHT_SHIFT  &kp DELETE
+&mkp RCLK   &kp LEFT_ALT &kp LEFT_GUI &mo_1 1 0    &kp SPACE &muhenkan  &mkp LCLK        &henkan    &kp SPACE  &mo_2 2 0 &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
