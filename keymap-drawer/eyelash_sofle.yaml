@@ -55,13 +55,13 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '&muhenkan', h: '&mo 1 0'}
+  - {t: '&muhenkan', h: layer1}
   - $$mdi:keyboard-space$$
   - '&muhenkan'
   - $$mdi:mouse-left-click-outline$$
   - '&henkan'
   - $$mdi:keyboard-space$$
-  - {t: '&henkan', h: '&mo 2 0'}
+  - {t: '&henkan', h: '2'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:backspace-reverse-outline$$
   layer1:
@@ -120,7 +120,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
@@ -191,6 +191,6 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
