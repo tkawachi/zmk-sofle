@@ -52,18 +52,18 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: ., h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:mouse-right-click-outline$$
+  - '&mkp C_MUTE'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '&muhenkan', h: layer1}
   - $$mdi:keyboard-space$$
-  - '&muhenkan'
+  - {t: Ctl+Sft+Gui+ 4, s: Ctl+Sft+Gui+ $}
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-left-click-outline$$
-  - '&henkan'
   - $$mdi:keyboard-space$$
   - {t: '&henkan', h: '2'}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -122,13 +122,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+Gui+ 4, s: Sft+Gui+ $}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - PLAY PAUSE
+  - $$mdi:volume-off$$
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:brightness-7$$
@@ -151,11 +151,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP 0
-  - +
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - F19
   - F1
   - F2
   - F3
@@ -164,9 +164,9 @@ layers:
   - F6
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 4
-  - KP 5
-  - KP 6
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - '{'
   - '}'
   - F7
@@ -177,11 +177,11 @@ layers:
   - F12
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,8 +192,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - PLAY PAUSE
-  - $$mdi:volume-off$$
+  - PG DN
+  - PG UP
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -216,10 +216,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP 0
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - +
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
@@ -229,9 +229,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 4
-  - KP 5
-  - KP 6
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - '{'
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,9 +242,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP 1
-  - KP 2
-  - KP 3
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
