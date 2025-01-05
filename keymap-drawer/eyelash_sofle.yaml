@@ -146,8 +146,8 @@ layers:
   - {t: '`', s: '~'}
   - {t: 'Gui+ [', s: 'Gui+ {'}
   - {t: 'Gui+ ]', s: 'Gui+ }'}
-  - '&LS(LA(DOWN_ARROW))'
-  - '&LS(LA(UP_ARROW))'
+  - Sft+Alt+ $$mdi:arrow-down-bold$$
+  - Sft+Alt+ $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
